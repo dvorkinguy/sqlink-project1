@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
@@ -13,10 +13,11 @@ def index():
     else:
         return '''
             <!DOCTYPE html>
+            <!DOCTYPE html>
             <html>
             <head>
                 <title>SQlink Simple Flask App</title>
-                    <link rel="stylesheet" href="{{ url_for('static', filename='css/apple-style.css') }}">
+                <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
             </head>
             <body>
                 <form method="POST">
@@ -29,7 +30,7 @@ def index():
                     <input type="submit" value="Submit">
                 </form>
             </body>
-            </html>
+            </html>      
         '''
 
 
