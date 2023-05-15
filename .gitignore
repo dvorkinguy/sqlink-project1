@@ -3,3 +3,4 @@ env/
 .dist/
 *.pdf
 temp.txt
+.gitignore
